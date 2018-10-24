@@ -2,7 +2,7 @@
   "name": "manobot",
   "version": "0.0.1",
   "description": "Discord Bot for Team Owlmelet Guest Server",
-  "main": "manobot.js",
+  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
