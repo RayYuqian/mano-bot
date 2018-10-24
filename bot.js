@@ -80,7 +80,7 @@ bot.on('message', function(message){
 	if((message.content).toLowerCase() == 'region oceania') 
 	{
 		message.channel.send("You are assigned to the region OCEANIA!");
-		let memberRole = message.member.guild.roles.find(x => x.name === "EU");
+		let memberRole = message.member.guild.roles.find(x => x.name === "OCEANIA");
 		message.member.addRole(memberRole);
 	}
 });
