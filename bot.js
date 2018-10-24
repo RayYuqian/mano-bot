@@ -76,6 +76,13 @@ bot.on('message', function(message){
 		let memberRole = message.member.guild.roles.find(x => x.name === "ASIA");
 		message.member.addRole(memberRole);
 	}
+	
+	if((message.content).toLowerCase() == 'region oceania') 
+	{
+		message.channel.send("You are assigned to the region OCEANIA!");
+		let memberRole = message.member.guild.roles.find(x => x.name === "EU");
+		message.member.addRole(memberRole);
+	}
 });
 
 bot.login(process.env.BOT_TOKEN);
