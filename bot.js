@@ -9,11 +9,6 @@ bot.on("ready", async () => {
 
 });
 
-bot.on("guildMemberAdd", function(member) {
-	let memberRole = member.guild.roles.find(x => x.name === "pingable");
-	member.addRole(memberRole);
-});
-
 bot.on("message", async message => {
 	if(message.author.bot) return;
 	if(message.channel.type === "dm") return;
